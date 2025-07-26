@@ -15,6 +15,27 @@ This repository implements a **hybrid quantum-classical model** for multi-class 
 This approach targets fine-grained classification across **five severity grades** (No_DR, Mild, Moderate, Severe, Proliferate_DR) and addresses class imbalance and overfitting through sampling strategies and strong regularization.
 
 ---
+## 🗄️ Dataset Used
+
+- **Dataset**: Diabetic Retinopathy 224×224 (2019) from Kaggle  
+- **Description**: High‑resolution retina fundus images categorized into five severity levels:
+  - **No_DR**  
+  - **Mild**  
+  - **Moderate**  
+  - **Severe**  
+  - **Proliferate_DR**  
+- **Directory Structure**:
+  ```bash
+  data/
+  ├── train/
+  │   ├── No_DR/
+  │   ├── Mild/
+  │   ├── Moderate/
+  │   ├── Severe/
+  │   └── Proliferate_DR/
+  └── (optional) validation/  # if using separate validation split
+  ```
+---
 
 ## 🚀 Tech Stack
 
@@ -27,17 +48,6 @@ This approach targets fine-grained classification across **five severity grades*
 | Loss          | Custom Focal Loss              |
 | Visualization | Matplotlib, Seaborn            |
 | Python Tools  | NumPy, scikit-learn            |
-
----
-
-## 📂 Repository Structure
-
-├── 8_qubit_diff_parameter_v2.py # Main training & evaluation script
-├── Quantum_model_v2.docx # Detailed architecture & methodology report
-├── model_output/ # Checkpoints & training history plots
-├── data/ # Dataset directory with class subfolders
-├── requirements.txt # Python dependencies
-└── README.md # This documentation file
 
 ---
 
