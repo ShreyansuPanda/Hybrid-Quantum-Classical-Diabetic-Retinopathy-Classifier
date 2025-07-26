@@ -100,9 +100,9 @@ This approach targets fine-grained classification across **five severity grades*
    git checkout -b feature/name
    ```
 3.**Commit your changes**
-  ```bash
+   ```bash
     git commit -m "Add feature"
-  ```
+   ```
 4. **Push to your branch**
    ```bash
    git push origin feature/name
